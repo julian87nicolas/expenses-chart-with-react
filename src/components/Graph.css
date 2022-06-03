@@ -1,0 +1,72 @@
+.graph {
+    background-color: var(--very-pale-orange);
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    border-radius: 1rem;
+
+    margin: 1rem;
+    padding: 1.25rem;
+
+    color: hsl(25, 47%, 15%);
+
+    min-width: 300px;
+}
+
+ul.days {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 100%;
+    
+    font-size: 0.8rem;
+    color: var(--medium-brown);
+    padding: 0;
+}
+
+ul.days li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    margin: 0.5rem;
+}
+
+.amount {
+    color: var(--very-pale-orange);
+    background-color: var(--dark-brown);
+    margin: 1rem;
+    padding: 0.5rem 0.4rem;
+    border-radius: 0.3rem;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.bar{
+    background-color: var(--soft-red);
+    border-radius: 0.25rem;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+li:hover > .bar{
+    background-color: var(--soft-red-hover);
+    cursor: pointer;
+}
+
+.max.bar {
+    background-color: var(--cyan);
+}
+
+li:hover > .max.bar:hover {
+    background-color: var(--cyan-hover);
+}
+
+li:hover > .amount {
+    opacity: 1;
+}
