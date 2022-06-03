@@ -22,7 +22,7 @@
 
 
 
-.total #value {
+#total-value {
     font-size: 2rem;
     font-weight: 700;
 }
@@ -33,7 +33,7 @@
     align-items: flex-end;
 }
 
-.aditional-info #value {
+#aditional-info-value {
     font-size: 1rem;
     font-weight: 700;
 }
